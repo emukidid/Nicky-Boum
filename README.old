@@ -1,0 +1,75 @@
+
+Nicky SDL/GBA README
+Release version: 0.2.0 (Aug 11 2007)
+-------------------------------------------------------------------------------
+
+
+About:
+------
+
+Nicky Boum is a classic platformer game initially designed for the Amiga. The
+game was published by Microids in 1992 and was also ported to the Atari ST and
+PC EGA platforms.
+
+This project aims to rewrite the original engine of the game and requires the
+original datafiles.
+
+This rewrite is based on the reversing of the Amiga and PC versions.
+
+The engine initially designed for Nicky Boum was re-used, along with several
+modifications in 2 games also distributed by Microids : Nicky 2 (1993) and
+Carlos (1994). Currently, only Nicky Boum and Nicky 2 are playable with this
+project.
+
+
+Requirements:
+-------------
+
+You need the original DOS version data files. The list is :
+
+	*.BLK (Nicky Boum)
+	*.CDG (Nicky Boum)
+	*.REF (Nicky Boum)
+	*.SPR (Nicky Boum)
+	*.SQX (Nicky 2)
+
+You also need some extra datafiles which can be downloaded from the project
+webpage.
+
+
+Running the SDL version:
+------------------------
+
+Download the extra datafiles package and extract its contents to the directory
+containing the original files.
+
+By default, the engine will try to load the game data files from the current
+directory. You can change that by using the command line options.
+
+The game keys are :
+
+	Arrow Keys   move Nicky
+	Space/Ctrl   action button
+	'i'          toggle inventory display
+	'p'          pause the game
+	F1           cheat mode, gives you all bonuses
+	F2           cheat mode, jumps to the next level
+
+
+Running the GBA version:
+-------------------------
+
+The game keys are :
+
+	Keypad       move Nicky
+	A/B          action button
+	Select       toggle inventory display
+	Start        pause the game
+	L            cheat mode, gives you all bonuses
+	R            cheat mode, jumps to the next level
+
+
+Contact:
+--------
+
+Gregory Montoir, cyx@users.sourceforge.net

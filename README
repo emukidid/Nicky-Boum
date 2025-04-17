@@ -1,12 +1,13 @@
-
-Nicky SDL/GBA README
+Nicky SDL README
 Release version: 0.2.0 (Aug 11 2007)
+Updated in 2025 by emu_kidid to work on the GameCube
 -------------------------------------------------------------------------------
 
+For the original readme for this engine, take a look at 'README.old'.
+All credit for the engine goes to the original author at http://cyxdown.free.fr/nicky/
 
 About:
 ------
-
 Nicky Boum is a classic platformer game initially designed for the Amiga. The
 game was published by Microids in 1992 and was also ported to the Atari ST and
 PC EGA platforms.
@@ -24,52 +25,44 @@ project.
 
 Requirements:
 -------------
-
-You need the original DOS version data files. The list is :
-
+You need the original DOS version data files, easily found by searching for "Nicky Boom PC DOS" or "Nicky 2 PC DOS".
+The list is :
 	*.BLK (Nicky Boum)
 	*.CDG (Nicky Boum)
 	*.REF (Nicky Boum)
 	*.SPR (Nicky Boum)
 	*.SQX (Nicky 2)
 
-You also need some extra datafiles which can be downloaded from the project
-webpage.
+A GameCube with a GameCube controller running Swiss + SD card adaptor.
 
 
-Running the SDL version:
+Usage:
 ------------------------
+Download the release and extract it to the root of your SD Card. Copy the files obtained above and put them in the
+/apps/nicky/nicky1 or /apps/nicky/nicky2 directory. If the PC DOS release you've obtained has directories, just flatten
+everything into one dir.
 
-Download the extra datafiles package and extract its contents to the directory
-containing the original files.
-
-By default, the engine will try to load the game data files from the current
-directory. You can change that by using the command line options.
-
-The game keys are :
-
-	Arrow Keys   move Nicky
-	Space/Ctrl   action button
-	'i'          toggle inventory display
-	'p'          pause the game
-	F1           cheat mode, gives you all bonuses
-	F2           cheat mode, jumps to the next level
-
-
-Running the GBA version:
--------------------------
+By default the DOL will try to load Nicky 1 from /apps/nicky/nicky1, if you use Swiss you'll get prompted in
+Swiss which game to load which will be either /apps/nicky/nicky1 or /apps/nicky/nicky2.
 
 The game keys are :
+	D-PAD/Analog   move Nicky
+	A              jump
+	B              action button
+	X              toggle inventory display
+	Start          pause the game
+	L Trigger      cheat mode, gives you all bonuses
+	R Trigger      cheat mode, jumps to the next level
+	Z              Quit back to title
 
-	Keypad       move Nicky
-	A/B          action button
-	Select       toggle inventory display
-	Start        pause the game
-	L            cheat mode, gives you all bonuses
-	R            cheat mode, jumps to the next level
 
+Notes:
+------------------------
+If someone wants to do a Wii version via a PR then please, by all means. I've also steered away from SDL slightly and
+it would be better if it went completely native, but this works enough for my own use that I didn't bother.
 
-Contact:
---------
+There's some SDL GL code that I couldn't get working, I'm not sure if it's ever worked even on PC.
 
-Gregory Montoir, cyx@users.sourceforge.net
+Thanks:
+------------------------
+Thanks to Extrems for adding SDL1 to libogc2 pacman.
